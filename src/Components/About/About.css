@@ -1,0 +1,55 @@
+.about {
+    height: 99vh;
+    width: 99vw;
+    background-color: lightblue;
+}
+
+.about-wrapper {
+    height: 99vh;
+    width: 99vw;
+    background-color: rgb(59, 59, 59);
+    /* text-align: center; */
+    display: flex;
+}
+
+.about-container {
+    margin-top: 3vh;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    text-transform: var(--text-uppercase);
+    color: var(--primary-orange);
+}
+
+.about-img {
+    /* margin-top: 20vh; */
+}
+
+.about-text {
+    margin: 1.5rem;
+    padding-bottom: 1px solid black;
+}
+
+.about-top {
+    font-weight: 700;
+}
+
+.about-top-span {
+    color: green;
+    font-family: 'Cardo', serif;
+}
+
+.about-h3{
+    font-weight: 600;
+}
+
+.about-name {
+    font-family: 'Parisienne', cursive;
+    font-weight: 500;
+}
+
+.about-paragraph {
+    font-size: 1.2rem;
+}

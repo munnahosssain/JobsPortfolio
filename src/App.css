@@ -1,3 +1,17 @@
+:root{
+  --primary-color: #fff;
+  --primary-orange: orange;
+  --text-uppercase: uppercase;
+}
+
+
+
+
+
+
+
+
+
 .App {
   text-align: center;
 }
