@@ -6,7 +6,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <Container>
-                <h1 className="skills-h1">My Skills</h1>
+                <h1 className="shared-heading">My Skills</h1>
             </Container>
         </div>
     );

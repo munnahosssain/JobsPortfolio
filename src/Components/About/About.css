@@ -1,14 +1,7 @@
-.about {
-    height: 99vh;
-    width: 99vw;
-    background-color: lightblue;
-}
-
 .about-wrapper {
     height: 99vh;
     width: 99vw;
-    background-color: rgb(59, 59, 59);
-    /* text-align: center; */
+    background-color: #3b3b3b;
     display: flex;
 }
 
@@ -17,9 +10,6 @@
 }
 
 .about-title {
-    text-align: center;
-    margin-bottom: 5rem;
-    text-transform: var(--text-uppercase);
     color: var(--primary-orange);
 }
 

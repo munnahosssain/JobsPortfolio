@@ -10,10 +10,11 @@ const About = () => {
         <div className="about">
             <div className="about-wrapper App-heade">
                 <Container className="about-container">
-                    <h1 className="about-title">About Me</h1>
+                    <h1 className="about-title shared-heading">About Me</h1>
                     <Card sx={{ display: 'flex' }}>
+                        {/* <img src={img} class="img-fluid" alt="..." /> */}
                         <CardMedia
-                            className="about-img"
+                            className="about-img img-fluid"
                             component="img"
                             sx={{ width: 600 }}
                             image={img}

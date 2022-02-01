@@ -1,9 +1,19 @@
-:root{
+:root {
   --primary-color: #fff;
   --primary-orange: orange;
   --text-uppercase: uppercase;
 }
 
+.shared-heading {
+  width: 15rem;
+  height: 3.5rem;
+  margin-left: 45%;
+  box-sizing: border-box;
+  text-align: center;
+  border-bottom: 5px solid goldenrod;
+  text-transform: var(--text-uppercase);
+  border-image: linear-gradient(to right, goldenrod 30%, #115f79 25%, #115f79 70%, goldenrod 50%) 5;
+}
 
 
 
@@ -46,6 +56,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

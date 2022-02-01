@@ -4,5 +4,7 @@
 }
 
 .skills-h1{
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    text-align: center;
+    text-transform: var(--text-uppercase);
 }
