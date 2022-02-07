@@ -1,10 +1,73 @@
-.skills{
-    height: 99vh;
-    width: 99vw;
+.skills {
+    height: 79vh;
 }
 
-.skills-h1{
+@media (max-width: 955px) {
+    .skills {
+        height: 89vh;
+    }
+}
+
+@media (max-width: 814px) {
+    .skills {
+        height: 99vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills {
+        height: 159vh;
+    }
+}
+@media (max-width: 536px) {
+    .skills {
+        height: 169vh;
+    }
+}
+@media (max-width: 425px) {
+    .skills {
+        height: 185vh;
+    }
+}
+@media (max-width: 320px) {
+    .skills {
+        height: 205vh;
+    }
+}
+
+.skill-card {
+    border: 10px solid whitesmoke;
+    box-shadow: 3rem;
+    background-color: whitesmoke;
+}
+
+.skills-h1 {
     margin-top: 3rem;
     text-align: center;
     text-transform: var(--text-uppercase);
+}
+
+.share-skill {
+    font-weight: 500;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.skills-icon {
+    display: flex;
+    color: #54535c;
+    font-size: 3.5em;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray !important;
+}
+
+.skills-icon:hover {
+    box-shadow: 40px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid red;
+    transition: all .4s linear;
+    background-color: red !important;
 }

@@ -1,6 +1,6 @@
 import './Projects.css'
 import React from 'react';
-import { BottomNavigation, BottomNavigationAction, Paper } from '@mui/material';
+import { BottomNavigation, BottomNavigationAction, Container, Paper } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAddressBook, faAddressCard, faHome, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,8 +13,9 @@ const Projects = () => {
     return (
         <div className="project-core">
             <h1 className="shared-heading">Projects</h1>
-            <Paper  sx={{ position: '', bottom: 0, left: 0, right: 0 }} elevation={3}>
-                <BottomNavigation sx={{ width: 1000 }} value={value} onChange={handleChange}>
+            <p className="shared-sub-heading">abc</p>
+            {/* <Container>
+                <BottomNavigation className="title-center" sx={{ width: 1000 }} value={value} onChange={handleChange}>
                     <BottomNavigationAction
                         label="Home"
                         value="home"
@@ -41,7 +42,7 @@ const Projects = () => {
                         icon={<FontAwesomeIcon icon={faAddressBook} />}
                     />
                 </BottomNavigation>
-            </Paper>
+            </Container> */}
         </div>
     );
 };

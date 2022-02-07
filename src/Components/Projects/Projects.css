@@ -1,10 +1,10 @@
 .project-core {
     height: 99vh;
     width: 99vw;
-    text-align: center;
+    /* text-align: center; */
 }
 
-.title-center{
-    text-align: center;
-    left: 50%;
+.title-center {
+    /* text-align: center; */
+    left: 50%!important;
 }

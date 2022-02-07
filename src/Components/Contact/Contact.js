@@ -4,7 +4,8 @@ const Contact = () => {
     return (
         <div>
             <div className="contact-wrapper">
-                <h1 className="shared-heading">Contact</h1>
+                <h1 className="shared-heading">Get in touch</h1>
+                <p className="text-center">Feel free to drop us a line to contact us</p>
             </div>
         </div>
     );
