@@ -2,7 +2,7 @@ import './Projects.css'
 import React from 'react';
 import { BottomNavigation, BottomNavigationAction, Container, Paper } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressBook, faAddressCard, faHome, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faCogs, faDesktop, faIceCream } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
     const [value, setValue] = React.useState('recents');
@@ -11,38 +11,33 @@ const Projects = () => {
         setValue(newValue);
     };
     return (
-        <div className="project-core">
+        <div id="projects" className="project-core">
             <h1 className="shared-heading">Projects</h1>
-            <p className="shared-sub-heading">abc</p>
-            {/* <Container>
-                <BottomNavigation className="title-center" sx={{ width: 1000 }} value={value} onChange={handleChange}>
+            <p className="shared-sub-heading">I believes in the power of creative ideas and great design.</p>
+            <Container>
+                <BottomNavigation className="title-center" sm={{ width: 270 }} value={value} onChange={handleChange}>
                     <BottomNavigationAction
-                        label="Home"
+                        label="Web Design"
                         value="home"
-                        icon={<FontAwesomeIcon icon={faHome} />}
+                        icon={<FontAwesomeIcon icon={faDesktop} />}
                     />
                     <BottomNavigationAction
-                        label="About"
+                        label="Vanila Js"
                         value="about"
-                        icon={<FontAwesomeIcon icon={faAddressCard} />}
+                        icon={<FontAwesomeIcon icon={faIceCream} />}
                     />
                     <BottomNavigationAction
-                        label="Skills"
+                        label="APIs"
                         value="skills"
-                        icon={<FontAwesomeIcon icon={faHome} />}
+                        icon={<FontAwesomeIcon icon={faCogs} />}
                     />
                     <BottomNavigationAction
-                        label="Project"
+                        label="React"
                         value="project"
-                        icon={<FontAwesomeIcon icon={faProjectDiagram} />}
-                    />
-                    <BottomNavigationAction
-                        label="Contact"
-                        value="contact"
-                        icon={<FontAwesomeIcon icon={faAddressBook} />}
+                        icon={<FontAwesomeIcon icon={faCode} />}
                     />
                 </BottomNavigation>
-            </Container> */}
+            </Container>
         </div>
     );
 };

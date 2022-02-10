@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 
 const Home = () => {
     return (
-        <div className="row g-0 home-wrapper">
+        <div id="home" className="row g-0 home-wrapper">
             <div className="col-md-6">
                 <div className="name-typed">
                     <p className="name-paragraph">Hello i am</p>

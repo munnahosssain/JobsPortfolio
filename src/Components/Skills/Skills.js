@@ -15,10 +15,6 @@ const languages = [
         now: 85,
     },
     {
-        title: 'jQuery',
-        now: 60,
-    },
-    {
         title: 'SCSS',
         now: 70,
     },
@@ -31,8 +27,12 @@ const languages = [
         now: 75,
     },
     {
-        title: 'Material UI',
+        title: 'C++',
         now: 70,
+    },
+    {
+        title: 'OOP',
+        now: 60,
     },
     {
         title: 'Node.js',
@@ -61,10 +61,9 @@ const cardInfo = [
     },
 ]
 
-
 const Skills = () => {
     return (
-        <div className="skills">
+        <div id="skill" className="skills">
             <Container>
                 <h1 className="shared-heading">My Skills</h1>
                 <p className="shared-sub-heading">I love what I do. I take great pride in what I do.</p>

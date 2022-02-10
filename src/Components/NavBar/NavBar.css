@@ -1,0 +1,21 @@
+.logo {
+  height: 2.7rem;
+  width: 2.7rem;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+/* *************** MENU ****************** */
+
+.menu-bar {
+  font-weight: 700;
+  text-transform: var(--text-uppercase);
+}
+
+.menu-bar:focus {
+  border-bottom: 0.125rem solid royalblue;
+}
+
+.menu-bar:hover {
+  border-bottom: 0.025rem solid var(--primary-orange);
+}

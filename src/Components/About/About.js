@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 
 const About = () => {
     return (
-        <div id="About" className="about-wrapper">
+        <div id="about" className="about-wrapper">
             <Container >
                 <h1 className="shared-heading">About Me</h1>
                 <div class="row g-0 bg-light">
