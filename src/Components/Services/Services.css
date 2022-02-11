@@ -1,12 +1,18 @@
-.services{
-    height: 99vh;
+.services-part {
+    /* margin-top: 100px; */
+    background-color: antiquewhite;
 }
 
-.card{
+.service {
+    height: 99vh;
+    background-color: antiquewhite;
+}
+
+.card {
     font-size: 25px;
 }
 
-.service-img{
+.service-img {
     /* height: 250px; */
     /* width: 289px !important; */
 }

@@ -1,4 +1,23 @@
 .contact-wrapper {
-    height: 99vh;
-    width: 99vw;
+    height: 70vh;
+    background-color: #343a42;
+}
+
+.status {
+    color: var(--primary-orange);
+}
+
+.contact-button {
+    transition: .3s ease-in-out;
+    height: 2.8rem;
+    border: 1px solid red;
+    text-decoration: none;
+    text-transform: var(--text-uppercase);
+    color: var(--primary-white);
+    border: 1px solid var(--primary-red);
+    /* background-color: #343a42; */
+}
+
+.contact-button:hover {
+    background-color: #599a59;
 }

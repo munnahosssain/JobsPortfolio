@@ -1,0 +1,27 @@
+.footer-main {
+    height: 25vh;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #c4211c;
+}
+
+.footer-logo {
+    margin-top: 45px;
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+  }
+
+.social-icon {
+    margin: 15px 10px 15px 0;
+}
+
+.footer-text {
+    color: #fff;
+    cursor: none;
+    letter-spacing: 3px;
+    font: 400 10px/18px Montserrat, sans-serif;
+}

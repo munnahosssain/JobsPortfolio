@@ -1,8 +1,8 @@
 import './Services.css'
-import { Card, Col, Container, Row } from 'react-bootstrap';
-import responsive from '../images/responsive.png';
 import react from '../images/react.png';
 import wordpress from '../images/wordpress.jpg';
+import responsive from '../images/responsive.png';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 
 
 const serviceCard = [
@@ -24,28 +24,29 @@ const serviceCard = [
 ]
 
 const Services = () => {
-
     return (
-        // <div>
-            <Container id="services" className="services">
-                <h3 className="shared-heading mb-5">What i'm doing</h3>
-                <Row md={3} className="g-4">
-                    {
-                        serviceCard.map((service) =>
-                            <Col>
-                                <Card>
-                                    <Card.Img variant="top" src={service.img} className="service-img" />
-                                    <Card.Body>
-                                        <Card.Title>{service.title}</Card.Title>
-                                        <Card.Text>{service.subTitle}</Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Col>
-                        )
-                    }
-                </Row>
-            </Container>
-        // </div>
+        <div className="services-part">
+            <div id="services" className="service">
+                <Container>
+                    <h3 className="shared-heading mt-5 mb-5">What i'm doing</h3>
+                    <Row md={3} className="g-4">
+                        {
+                            serviceCard.map((service) =>
+                                <Col>
+                                    <Card>
+                                        <Card.Img variant="top" src={service.img} className="service-img" />
+                                        <Card.Body>
+                                            <Card.Title>{service.title}</Card.Title>
+                                            <Card.Text>{service.subTitle}</Card.Text>
+                                        </Card.Body>
+                                    </Card>
+                                </Col>
+                            )
+                        }
+                    </Row>
+                </Container>
+            </div>
+        </div>
     );
 };
 
