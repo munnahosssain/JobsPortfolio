@@ -25,21 +25,21 @@ const Contact = () => {
             <Container>
                 <div id="contact">
                     <h2 className="shared-heading">Get in touch</h2>
-                    <p className="text-center">Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
+                    <p className="shared-sub-heading text-white">Please fill out the form and describe your project needs and I'll contact you as soon as possible.</p>
                     <Form onSubmit={mailSend}>
                         <CardGroup>
                             <Col>
                                 <Form.Group className="p-2 mb-3" as={Col} controlId="formGridEmail">
-                                    <Form.Control type="text" name="name" placeholder="Name" required />
+                                    <Form.Control className="form-control-lg" type="text" name="name" placeholder="Name" required />
                                 </Form.Group>
                                 <Form.Group className="p-2 mb-3" controlId="formGridAddress1">
-                                    <Form.Control type="number" name="number" placeholder="Phone Number" required />
+                                    <Form.Control className="form-control-lg" type="number" name="number" placeholder="Phone Number" required />
                                 </Form.Group>
                                 <Form.Group className="mb-3 p-2" controlId="formGridAddress2">
-                                    <Form.Control type="email" name="email" placeholder="Email" required />
+                                    <Form.Control className="form-control-lg" type="email" name="email" placeholder="Email" required />
                                 </Form.Group>
                                 <Form.Group className="mb-3 p-2" controlId="formGridAddress2">
-                                    <Form.Control name="subject" placeholder="Subject" />
+                                    <Form.Control className="form-control-lg" name="subject" placeholder="Subject" />
                                 </Form.Group>
                             </Col>
                             <Col>
@@ -49,7 +49,7 @@ const Contact = () => {
                                             name="message"
                                             as="textarea"
                                             placeholder="Leave a comment here"
-                                            style={{ height: '150px' }}
+                                            style={{ height: '210px' }}
                                             required
                                         />
                                     </FloatingLabel>

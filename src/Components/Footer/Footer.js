@@ -12,18 +12,23 @@ import linkedin from '../images/linkedin.png';
 const iconList = [
     {
         icon: facebook,
+        url: '',
     },
     {
         icon: github,
+        url: '',
     },
     {
         icon: skype,
+        url: '',
     },
     {
         icon: linkedin,
+        url: '',
     },
     {
         icon: google,
+        url: '',
     },
 ]
 

@@ -19,16 +19,19 @@
         height: 159vh;
     }
 }
+
 @media (max-width: 536px) {
     .skills {
         height: 169vh;
     }
 }
+
 @media (max-width: 425px) {
     .skills {
         height: 185vh;
     }
 }
+
 @media (max-width: 320px) {
     .skills {
         height: 205vh;
@@ -36,8 +39,8 @@
 }
 
 .skill-card {
-    border: 10px solid whitesmoke;
     box-shadow: 3rem;
+    border: 10px solid whitesmoke;
     background-color: whitesmoke;
 }
 
