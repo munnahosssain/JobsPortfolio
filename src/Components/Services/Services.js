@@ -9,7 +9,7 @@ const serviceCard = [
     {
         img: responsive,
         title: 'Responsive Design',
-        subTitle: 'PSD/Figma/Sketch to HTML fully responsive web design, Professional design awesome looking custom webpage design with HTML5, CSS3, Bootstrap5 and jQuery. All browser comfortable clean and organized code.',
+        subTitle: 'PSD/Figma/Sketch to HTML fully responsive web design, Professional design awesome looking custom webpage design with HTML5, CSS3, Bootstrap5 and jQuery. All browser comfortable, clean and organized code.',
     },
     {
         img: Development,

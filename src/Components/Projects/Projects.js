@@ -1,43 +1,80 @@
 import './Projects.css'
-import React from 'react';
-import { BottomNavigation, BottomNavigationAction, Container, Paper } from '@mui/material';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faCogs, faDesktop, faIceCream } from '@fortawesome/free-solid-svg-icons';
+import PortfolioList from './PortfolioList';
+import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
+import { design, vanillaJs, APIs, reactJs } from './ProjeceData'
 
 const Projects = () => {
-    const [value, setValue] = React.useState('recents');
 
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
-    };
+    const [select, setSelect] = useState([]);
+    const [data, setData] = useState([]);
+
+    const navList = [
+        {
+            id: "webDesign",
+            title: "Design",
+        },
+        {
+            id: "javascript",
+            title: "VanilaJs",
+        },
+        {
+            id: "Api",
+            title: "APIs",
+        },
+        {
+            id: "react",
+            title: "ReactJs",
+        },
+    ];
+
+    useEffect(() => {
+        switch (select) {
+            case "webDesign":
+                setData(design);
+                break;
+            case "javascript":
+                setData(vanillaJs);
+                break;
+            case "Api":
+                setData(APIs);
+                break;
+            case "react":
+                setData(reactJs);
+                break;
+            default:
+                setData(design);
+        }
+    }, [select])
+
     return (
         <div id="projects" className="project-core">
             <h1 className="shared-heading">Projects</h1>
             <p className="shared-sub-heading">I believes in the power of creative ideas and great design.</p>
-            <Container>
-                <BottomNavigation className="title-center" sm={{ width: 270 }} value={value} onChange={handleChange}>
-                    <BottomNavigationAction
-                        label="Web Design"
-                        value="home"
-                        icon={<FontAwesomeIcon icon={faDesktop} />}
-                    />
-                    <BottomNavigationAction
-                        label="Vanila Js"
-                        value="about"
-                        icon={<FontAwesomeIcon icon={faIceCream} />}
-                    />
-                    <BottomNavigationAction
-                        label="APIs"
-                        value="skills"
-                        icon={<FontAwesomeIcon icon={faCogs} />}
-                    />
-                    <BottomNavigationAction
-                        label="React"
-                        value="project"
-                        icon={<FontAwesomeIcon icon={faCode} />}
-                    />
-                </BottomNavigation>
-            </Container>
+            <div className="portfolio">
+                <ul>
+                    {
+                        navList.map(lists => <PortfolioList
+                            title={lists.title}
+                            active={select === lists.id}
+                            setSelect={setSelect}
+                            id={lists.id}
+                            key={lists.id}
+                        />)
+                    }
+                </ul>
+                <div className="portfolio-container">
+                    {
+                        data.map((data) => (
+                            <div className="items">
+                                <img className="img-wrapping" src={data.img} alt="" />
+                                <p className="portfolio-title">{data.title}</p>
+                                <button className="portfolio-title">souece</button>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
         </div>
     );
 };
