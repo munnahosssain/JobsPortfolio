@@ -2,27 +2,19 @@
     height: 99vh;
 }
 
+@media (max-width: 320px) {
+    .project-core{
+        height: 195vh;
+    }
+}
+
 .portfolio {
     height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    border-top: 5rem solid #fff;
-}
-
-@media (max-width:1024px) {
-    .portfolio {
-        height: 100vh;
-        border-top: 1rem solid #fff;
-    }
-}
-
-@media (max-width:768px) {
-    .portfolio {
-        height: 225vh;
-        border-top: 0rem solid #fff;
-    }
+    border-top: .5rem solid #fff;
 }
 
 ul {

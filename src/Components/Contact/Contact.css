@@ -3,6 +3,16 @@
     background-color: #343a42;
 }
 
+@media (max-width: 320px) {
+    .contact-wrapper{
+        height: 115vh;
+    }
+}
+
+.row{
+    width: ;
+}
+
 .status {
     color: var(--primary-orange);
 }
@@ -15,7 +25,6 @@
     text-transform: var(--text-uppercase);
     color: var(--primary-white);
     border: 1px solid var(--primary-red);
-    /* background-color: #343a42; */
 }
 
 .contact-button:hover {

@@ -12,23 +12,23 @@ import linkedin from '../images/linkedin.png';
 const iconList = [
     {
         icon: facebook,
-        url: '',
+        url: 'https://www.facebook.com/people/Mayinuddin-Munna/100073611545089/',
     },
     {
         icon: github,
-        url: '',
+        url: 'https://github.com/munnahosssain',
     },
     {
         icon: skype,
-        url: '',
+        url: 'https://join.skype.com/invite/Q1ajR6vuVWYD',
     },
     {
         icon: linkedin,
-        url: '',
+        url: 'https://www.linkedin.com/in/mayinuddin-munna-b8b9541a1/',
     },
     {
         icon: google,
-        url: '',
+        url: 'https://myaccount.google.com/?tab=kk&hl=en',
     },
 ]
 
@@ -38,7 +38,7 @@ const Footer = () => {
             <Image src={logo} className="footer-logo" /> <br />
             {
                 iconList.map((icons) =>
-                    <Image src={icons.icon} className="social-icon" />
+                    <Image src={icons.icon} link={icons.url} className="social-icon" />
                 )
             }
             <br />
