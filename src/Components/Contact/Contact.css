@@ -1,16 +1,12 @@
 .contact-wrapper {
     height: 70vh;
-    background-color: #343a42;
+    background-color: #023430;
 }
 
 @media (max-width: 320px) {
     .contact-wrapper{
         height: 120vh;
     }
-}
-
-.row{
-    width: ;
 }
 
 .status {

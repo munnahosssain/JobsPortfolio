@@ -6,7 +6,7 @@ import { Container, Image, Nav, Navbar } from 'react-bootstrap';
 const NavBar = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" sticky="top" bg="light" variant="light">
                 <Container>
                     <Nav.Link to="/" href="#home">
                         <Image src={logo} className="logo" />

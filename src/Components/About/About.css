@@ -1,8 +1,7 @@
 .about-wrapper {
     display: flex;
     height: 89vh;
-    /* width: 99vw; */
-    background-color: #3b3b3b;
+    background-color: #061621;
 }
 
 @media (max-width:991px) {
@@ -11,9 +10,9 @@
     }
 }
 
-@media (max-width:787px) {
+@media (max-width:767px) {
     .about-wrapper {
-        height: 150vh;
+        height: 145vh;
     }
 }
 

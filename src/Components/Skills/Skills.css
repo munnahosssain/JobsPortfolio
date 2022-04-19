@@ -2,27 +2,33 @@
     height: 79vh;
 }
 
+@media (max-width: 1096px) {
+    .skills {
+        height: 90vh;
+    }
+}
+
 @media (max-width: 955px) {
     .skills {
-        height: 89vh;
+        height: 98vh;
     }
 }
 
 @media (max-width: 814px) {
     .skills {
-        height: 99vh;
+        height: 105vh;
     }
 }
 
 @media (max-width: 767px) {
     .skills {
-        height: 159vh;
+        height: 155vh;
     }
 }
 
 @media (max-width: 536px) {
     .skills {
-        height: 169vh;
+        height: 160vh;
     }
 }
 

@@ -1,8 +1,7 @@
-import './Projects.css'
+import './Projects.css';
 import PortfolioList from './PortfolioList';
 import React, { useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
-import { design, vanillaJs, APIs, reactJs } from './ProjeceData'
+import { design, vanillaJs, APIs, reactJs } from './ProjeceData';
 
 const Projects = () => {
 
@@ -11,18 +10,22 @@ const Projects = () => {
 
     const navList = [
         {
+            key:1,
             id: "webDesign",
             title: "Design",
         },
         {
+            key:2,
             id: "javascript",
             title: "VanilaJs",
         },
         {
+            key:3,
             id: "Api",
             title: "APIs",
         },
         {
+            key:4,
             id: "react",
             title: "ReactJs",
         },
@@ -48,7 +51,7 @@ const Projects = () => {
     }, [select])
 
     return (
-        <div id="projects" className="project-core">
+        <div id="projects" className="project">
             <h1 className="shared-heading">Projects</h1>
             <p className="shared-sub-heading">I believes in the power of creative ideas and great design.</p>
             <div className="portfolio">
@@ -66,7 +69,7 @@ const Projects = () => {
                 <div className="portfolio-container">
                     {
                         data.map((data) => (
-                            <div className="items">
+                            <div key={data.id} className="items">
                                 <img className="img-wrapping" src={data.img} alt="" />
                                 <p className="portfolio-title">{data.title}</p>
                                 <button className="portfolio-title">souece</button>
